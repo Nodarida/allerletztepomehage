@@ -1,0 +1,271 @@
+* { box-sizing: border-box; }
+
+body {
+  font-family: 'IBM Plex Sans', sans-serif;
+  text-align: center;
+  
+}
+
+h1 {
+  text-align: center;
+  color: #a0a0a0;
+  font-size: 5em;
+  margin-top: 1.2em;
+  margin-bottom: 1.3em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: lighter;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.scene {
+  margin: 40px 0;
+  position: relative;
+  width: 450px;
+  height: 300px;
+  margin: 50px auto;
+  perspective: 1000px;
+  z-index: 1;
+}
+
+.carousel {
+  width: 100%;
+  height: 90%;
+  position: absolute;
+  transform: translateZ(-73px);
+  transform-style: preserve-3d;
+  transition: transform 1s;
+  
+}
+
+
+.carousel__cell {
+  position: absolute;
+  width: 450px;
+  height: 300px;
+  left: 10px;
+  top: 0;
+  line-height: 110px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  transition: transform 1s, opacity 1s;
+}
+
+.carousel__cell:nth-child(9n+1) img {width: 300px; height: 200px;}
+.carousel__cell:nth-child(9n+2) img {width: 300px; height: 200px;}
+.carousel__cell:nth-child(9n+3) img {width: 300px; height: 200px;}
+.carousel__cell:nth-child(9n+4) img {width: 300px; height: 200px;}
+.carousel__cell:nth-child(9n+5) img {width: 300px; height: 200px;}
+
+
+.carousel__cell:nth-child(1) { transform: rotateY(  0deg) translateZ(73px); }
+.carousel__cell:nth-child(2) { transform: rotateY( 72deg) translateZ(73px); }
+.carousel__cell:nth-child(3) { transform: rotateY( 144deg) translateZ(73px); }
+.carousel__cell:nth-child(4) { transform: rotateY(216deg) translateZ(73px); }
+.carousel__cell:nth-child(5) { transform: rotateY(288deg) translateZ(73px); }
+
+
+
+
+.carousel-options {
+  
+  text-align: center;
+  color: rgb(255, 255, 255);
+  position: relative;
+  z-index: 2;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight:lighter;
+  
+}
+
+.custom-radio-btn {
+  --size: 20px;
+  border-radius: 0%;
+  justify-content: center;
+  
+  cursor: pointer;
+  /* changes from the video   */
+  
+  
+  position: relative;
+  
+  
+}
+.custom-radio-btn input {
+  display: none;
+}
+
+/* handle if you want label on the left of the checkmark instead */
+
+.custom-radio-btn.left {
+  padding-left: 0;
+  padding-right: var(--size);
+}
+
+
+
+.custom-radio-btn.left .label {
+  margin: 0 5px;
+}
+
+.custom-radio-btn[aria-label]::after {
+  content: attr(aria-label);
+  display: inline-block;
+  
+}
+
+.custom-radio-btn .checkmark {
+  --gap: 2px;
+  --border: 2px;
+  
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  display: inline-block;
+  transition: opacity 0.3s ease;
+  /* changes from the video  */
+  
+  
+  
+  position:relative;
+  top: 5px;
+ 
+}
+
+
+
+.custom-radio-btn input:checked ~ .checkmark {
+  /* changes from the video  */
+
+  /*  content box origin will make sure the bg-image only stays inside content area in between padding  */
+  background-origin: content-box;
+  background-repeat: no-repeat;
+  background-image: radial-gradient(
+    circle at center, 
+    var(--check-color) 
+     /* the size of the check mark is determined by subtracting from the size of the circle
+     the border(both sides) and the gap(both sides) than dividing it by 2 to get the radius of the circle        */
+       calc((var(--size) - (var(--border) * 2) - (var(--gap) * 2)) / 2), 
+    rgba(255, 255, 255, 0) 0);
+}
+
+
+.previous-button {
+  
+  background-color: #0f0f0e;
+  color: white;
+  border:2px solid rgb(151, 151, 151);
+  -webkit-border-radius: 10px;
+  padding: 8px 8px;
+  text-align: center;
+  opacity: 0.6;
+  transition: 0.2s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+
+.previous-button:hover {
+  background-color: rgb(151, 151, 151);
+  opacity: 1; 
+  
+  
+}
+
+.next-button {
+  
+  background-color: #0f0f0e;
+  color: white;
+  border:2px solid rgb(151, 151, 151);
+  -webkit-border-radius: 10px;
+  padding: 8px 20px;
+  text-align: center;
+  opacity: 0.6;
+  transition: 0.1s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  transition-duration: 0.1s;
+}
+
+.next-button:hover {
+  background-color: rgb(151, 151, 151);
+  opacity: 1; 
+ 
+  
+}
+
+@media screen and (max-width: 43em) {
+  nav a {
+      top: auto;
+      bottom: 1rem;
+  }
+}
+
+.center {
+  padding-top: 130px;
+  padding-bottom: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+span {
+  font-size: 75px;
+  color: #7a7a7a;
+}
+span.type {
+  margin: 0 auto;
+  width: 200px;
+  margin-top: 100px;
+  color:  white;
+}
+span.type::after {
+  content: "|";
+  display: inline;
+  animation: blink 0.7s infinite;
+}
+
+/*Removes cursor that comes with typed.js*/
+.typed-cursor {
+  opacity: 0;
+  display: none;
+}
+
+/*Custom cursor animation*/
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
