@@ -330,13 +330,13 @@
                             function onClick() {
                                 
                                 if( currentIndex == 0) {
-                                    window.location.href ="/Projekte/Projects.html"; 
+                                    window.location.href ="/projects/Projects.html"; 
                                     }
                                     if( currentIndex == 1) {
                                         window.location.href ="/movies/movies.html";
                                         }
                                         if( currentIndex == 2) {
-                                            window.location.href ="/movies/movies.html";
+                                            window.location.href ="/aboutME/about.html";
                                             }
                                             if( currentIndex == 3) {
                                                 window.location.href ="/movies/movies.html";
