@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function(){
       Typed.new('.type', {
-        strings:["", "a design student", "more precisely", "a iot student", "a fan of animations", "sometimes late", "a movie editor", "Noah Mantel"],
+        strings:["", "a design student", "more precisely", "an IoT student", "a video editor", "a fan of animations", "sometimes late", "Noah Mantel"],
         stringsElement: null,
 		// typing speed
 		typeSpeed: 60,
