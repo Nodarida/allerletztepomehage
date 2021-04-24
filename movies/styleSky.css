@@ -1,10 +1,7 @@
-
-
-
 #stars {
     width: 1px;
     height: 1px;
-    z-index: 330;
+    z-index: 3;
     background: transparent;
     animation: animStar 80s linear infinite;
     box-shadow: 779px 1331px #fff, 324px 42px #fff, 303px 586px #fff,
@@ -189,7 +186,7 @@
 #stars:after {
     content: '';
     position: absolute;
-    top: 1000px;
+    top: 2000px;
     width: 1px;
     height: 1px;
     background: transparent;
@@ -431,7 +428,7 @@
 }
 
 #stars2:after {
-    z-index: 400;
+    z-index: 40;
     content: '';
     position: absolute;
     top: 2000px;

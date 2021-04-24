@@ -4,8 +4,6 @@ body {
     background-color: #101010;
 }
 
-
-
 * {
     box-sizing: border-box;
 }
@@ -122,14 +120,7 @@ p {
     font-weight:500;
 }
 
-.hero-image {
-  background-image: linear-gradient(rgba(65, 65, 65, 0.5), rgba(78, 78, 78, 0.5)), url("/bilder/Banner_Eva.png");
-  height: 105vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
+
 
 .hero-text {
   text-align: center;
@@ -164,7 +155,7 @@ h2 {
     margin-top: 0px;
     font-size: 40px;
     font-style: normal;
-    color:  #da1b4a;
+    color:  #c7da1b;
 }
 
 h3 {
@@ -172,7 +163,7 @@ h3 {
     margin-top: -45px; 
     font-size: 40px;
     font-style: normal;
-    color: #da1b4a}
+    color: #dad71b}
 
 h5 {
     margin-top: -30px;
@@ -298,7 +289,7 @@ ul{
   
   span {
     font-size: 75px;
-    color: #da1b4a;
+    color: #dad71b;
   }
   span.type {
     margin: 0 auto;
@@ -317,7 +308,6 @@ ul{
     opacity: 0;
     display: none;
   }
-  
   
   /*Custom cursor animation*/
   @keyframes blink {
