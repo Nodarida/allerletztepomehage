@@ -330,21 +330,18 @@
                             function onClick() {
                                 
                                 if( currentIndex == 0) {
-                                    window.location.href ="/projects/Projects.html"; 
+                                    window.location.href ="Projects.html"; 
                                     }
                                     if( currentIndex == 1) {
-                                        window.location.href ="/movies/movies.html";
+                                        window.location.href ="movies.html";
                                         }
                                         if( currentIndex == 2) {
-                                            window.location.href ="/aboutME/about.html";
+                                            window.location.href ="about2.html";
                                             }
-                                            if( currentIndex == 3) {
-                                                window.location.href ="/movies/movies.html";
-                                                }
-                                                if( currentIndex == 4) {
-                                                    window.location.href ="/movies/movies.html";
-                                                    }
-                                        
+                                           if (currentIndex == 3){
+                                               return 0;
+                                           }
+                                       
                                     
                             }
                         }
