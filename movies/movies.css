@@ -14,6 +14,8 @@ body {
   
 }
 
+
+
 * {
     box-sizing: border-box;
 }
@@ -21,21 +23,15 @@ body {
 img {
     vertical-align: middle;
     z-index: 2;
-    padding: 200px;
-    width: 150px;
-    margin-top: -200px;
-    margin-bottom: -360px;
-    
-  }
+}
 
 .text-section {
     padding: 50px;
-    text-align: left;
+    text-align: center;
     background-color: #242424;
     color: white;
     border-bottom: 1px solid white;
     border-top: 1px solid white;
-    padding-left:600px;
 }
 
 /* Position the image container (needed to position the left and right arrows) */
@@ -46,35 +42,6 @@ img {
     top: 5px;
     z-index: 1;
 }
-/* Some left and right padding inside the container */
-.container-me {
-  
-  padding: 0 0px;
-  
-  
-}
-
- /* Clear floats */
-  .container-me::after, .row-me::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-  .title-me {
-    color: grey;
-    
-    
-  }
-
-  .column-me {
-    float: left;
-    width: 33.3%;
-    margin-bottom: 16px;
-    padding: 0 8px;
-    padding-left: 150px;
-    padding-top: 40px;
-    padding-bottom: 30px;
-  }
 
 /* Hide the images by default */
 .mySlides {
@@ -115,7 +82,14 @@ img {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
 
 /* Container for image text */
 .caption-container {
@@ -127,7 +101,7 @@ img {
     font-weight: 100;
 }
 
-.row-fluid:after {
+.row:after {
     content: "";
     display: table;
     clear: both;
@@ -156,17 +130,9 @@ p {
     color: rgb(182, 182, 182);
     font-family: 'IBM Plex Sans', sans-serif;
     font-weight:500;
-    font-size:16px ;
 }
 
-.hero-image {
-  background-image: linear-gradient(rgba(65, 65, 65, 0.5), rgba(78, 78, 78, 0.5)), url("/bilder/bikeme.jpg");
-  height: 105vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
+
 
 .hero-text {
   text-align: center;
@@ -201,7 +167,7 @@ h2 {
     margin-top: 0px;
     font-size: 40px;
     font-style: normal;
-    color:  #8f18e4;
+    color:  #cdda1b;
 }
 
 h3 {
@@ -209,24 +175,20 @@ h3 {
     margin-top: -45px; 
     font-size: 40px;
     font-style: normal;
-    color: #da1b4a}
+    color: #cdda1b}
 
 h5 {
     margin-top: -30px;
     color: #626262;
-    text-align: left;
-}
-
-h6 {
-  color: #8f18e4;
-  font-size: 40px;
-
+    text-align: center;
 }
 
 .text-section-two {
     margin-top: 150px;
-    padding-bottom: 6px;
-    background-color: #242424;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    text-align: center;
+    background-color: #000000;
     color: #8f8f8f;
     top: 50px;
     margin-bottom: 200px;
@@ -339,7 +301,7 @@ ul{
   
   span {
     font-size: 75px;
-    color: #8f18e4;
+    color: #cdda1b;
   }
   span.type {
     margin: 0 auto;
@@ -358,6 +320,7 @@ ul{
     opacity: 0;
     display: none;
   }
+  
   
   /*Custom cursor animation*/
   @keyframes blink {
@@ -395,99 +358,3 @@ ul{
   }
 
 
-  #skills {
-  
-    padding: 20px 15px 75px 15px;
-    color: rgb(255, 255, 255);
-  }
-  
-  .skills-text {
-    max-width: 1080px;
-    margin-left: 700px;
-    margin-right: auto;
-    font-size: 20px;
-    margin-top: -342px;
-  }
-  
-  .skills-title {
-    display: block;
-    margin-bottom: 2rem;
-  }
-  
-  .skills-title.underline:before {
-    width: 40px;
-  }
-  
-  .skills-list {
-    overflow: hidden;
-    position: relative;
-    z-index: 10
-  }
-  
-  .skill-name:after {
-    background-color: #999797;
-    content: '';
-    display: block;
-    height:1rem;
-    position: relative;
-    top: 3px;
-    /*top: 1rem;*/
-    width: 100%;
-  }
-  
-  .skill-percent {
-    font-size: 0;
-    height: 1rem;
-    position: relative;
-    top: -.8rem;
-    transition: 3s linear;
-    width: 0;
-    right: 40px;
-  }
-  
-  /* SKILL BAR COLORS */
-  
-  .skill-percent-html {
-    background-color: #5b0a91;
-  }
-
-  .skill-percent-jquery {
-    background-color: #772bac;
-  }
-  .skill-percent-scss {
-    background-color: #9346c8;
-  }
-  .skill-percent-javascript {
-    background-color: #af60e4;
-  }
-  .skill-percent-wordpress {
-    background-color:#cc7bff ;
-  }
-
-  
-  /* Heading Underline */
-  
-  .underline {
-    display: inline-block;
-    position: relative;
-    color: #b3b3b3;
-  }
-  
-  .underline:before {
-    background-color: rgb(206, 206, 206);
-    bottom: -15px;
-    content: '';
-    height: 2px;
-    left: 0;
-    position: absolute;
-    width: 110%;
-  }
-
-  
-
-  div.desc {
-    padding: 55px;
-    text-align: center;
-    color: white;
-    margin-top: 140px;
-  }
