@@ -27,11 +27,12 @@ img {
 
 .text-section {
     padding: 50px;
-    text-align: center;
+    text-align: left;
     background-color: #242424;
     color: white;
     border-bottom: 1px solid white;
     border-top: 1px solid white;
+    padding-left: 600px;
 }
 
 /* Position the image container (needed to position the left and right arrows) */
@@ -187,7 +188,7 @@ h3 {
 h5 {
     margin-top: -30px;
     color: #626262;
-    text-align: center;
+    text-align: left;
 }
 
 .text-section-two {

@@ -27,7 +27,8 @@ img {
 
 .text-section {
     padding: 50px;
-    text-align: center;
+    text-align: left;
+    padding-left: 500px;
     background-color: #242424;
     color: white;
     border-bottom: 1px solid white;
@@ -161,7 +162,7 @@ h2 {
 }
 
 h3 {
-    text-align: center;
+    text-align: left;
     margin-top: -45px; 
     font-size: 40px;
     font-style: normal;
@@ -170,20 +171,21 @@ h3 {
 h5 {
     margin-top: -30px;
     color: #626262;
-    text-align: center;
+    text-align: left;
 }
 
 .text-section-two {
     margin-top: 150px;
     padding-top: 100px;
     padding-bottom: 50px;
-    text-align: center;
+    text-align: left;
     background-color: #242424;
     color: #8f8f8f;
     top: 50px;
     margin-bottom: 200px;
     border-bottom: 1px solid white;
     border-top: 1px solid white;
+    padding-left: 500px;
     
 }
 .container-footer{
