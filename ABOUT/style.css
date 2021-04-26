@@ -30,12 +30,12 @@ img {
 
 .text-section {
     padding: 50px;
-    text-align: left;
+    text-align: center;
     background-color: #242424;
     color: white;
     border-bottom: 1px solid white;
     border-top: 1px solid white;
-    padding-left: 600px;
+    
 }
 
 /* Position the image container (needed to position the left and right arrows) */
@@ -156,7 +156,8 @@ p {
     color: rgb(182, 182, 182);
     font-family: 'IBM Plex Sans', sans-serif;
     font-weight:500;
-    font-size:16px ;
+    font-size:1vw;
+
 }
 
 .hero-image {
@@ -214,7 +215,7 @@ h3 {
 h5 {
     margin-top: -30px;
     color: #626262;
-    text-align: left;
+    text-align: center;
 }
 
 h6 {
