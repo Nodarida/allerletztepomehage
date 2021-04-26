@@ -160,6 +160,13 @@ p {
 
 }
 
+h4 {
+  padding-bottom: 15px;
+  font-weight:bold;
+  color: #626262;
+  font-size: 1.5vw;
+}
+
 .hero-image {
   background-image: linear-gradient(rgba(65, 65, 65, 0.5), rgba(78, 78, 78, 0.5)), url("/bilder/bikeme.jpg");
   height: 105vh;
