@@ -440,7 +440,7 @@
                     is_loaded = true
 
                     // set new index
-                    currentIndex = next;
+                    //currentIndex = next;
                 },
 
                 onUpdate: function () {
@@ -794,8 +794,10 @@
                         if ((drag_start.x - newPosition.x) < -options.swipeDistance) {
                             if (currentIndex >= 0 && currentIndex < options.slideImages.length - 1) {
                                 slideTransition(currentIndex + 1);
+                                currentIndex += 1;
                             } else {
                                 slideTransition(0);
+                                currentIndex = 0;
                             }
                         }
 
@@ -803,8 +805,12 @@
                         if ((drag_start.x - newPosition.x) > options.swipeDistance) {
                             if (currentIndex > 0 && currentIndex < options.slideImages.length) {
                                 slideTransition(currentIndex - 1);
+                                currentIndex -= 1;
+                            
                             } else {
                                 slideTransition(options.slideImages.length - 1);
+                                currentIndex = options.slideImages.length - 1;
+
                             }
                         }
                     }
@@ -873,14 +879,18 @@
                     if (this.getAttribute('data-nav') === 'next') {
                         if (currentIndex >= 0 && currentIndex < options.slideImages.length - 1) {
                             slideTransition(currentIndex + 1);
+                            currentIndex += 1;
                         } else {
                             slideTransition(0);
+                            currentIndex = 0;
                         }
                     } else {
                         if (currentIndex > 0 && currentIndex < options.slideImages.length) {
                             slideTransition(currentIndex - 1);
+                            currentIndex -= 1;
                         } else {
-                            slideTransition(options.slideImages.length - 1);
+                            slideTransition(options.slideImages.length - 1); 
+                            currentIndex = options.slideImages.length - 1;
                         }
                     }
                     return false;
