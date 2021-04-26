@@ -333,14 +333,12 @@
                                     window.location.href ="Projects.html"; 
                                     }
                                     if( currentIndex == 1) {
-                                        window.location.href ="/movies/movies.html";
+                                        window.location.href ="../movies/movies.html";
                                         }
                                         if( currentIndex == 2) {
                                             window.location.href ="about2.html";
                                             }
-                                           if (currentIndex == 3){
-                                               return 0;
-                                           }
+                                           
                                        
                                     
                             }
